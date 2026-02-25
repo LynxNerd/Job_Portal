@@ -19,7 +19,7 @@
       <h2>Find Your Dream Job</h2>
       <p>Search jobs by skill, designation, or location</p>
 
-      <form>
+      <form id="searchForm">
         <label>Job Title or Skill</label><br />
         <input type="text" placeholder="e.g. Software Developer" /><br /><br />
 
@@ -33,6 +33,39 @@
       </form>
 
       <hr />
+      <div id="searchResults"></div>
+
+    </section>
+    <hr>
+
+    <section id="post-job">
+        <h2>Post a Job</h2>
+
+        <form id="jobForm">
+            <p>
+                <label>Job Title:</label>
+                <input type="text" id="jobTitle" required>
+            </p>
+
+            <p>
+                <label>Company Name:</label>
+                <input type="text" id="companyName" required>
+            </p>
+
+            <p>
+                <label>Location:</label>
+                <input type="text" id="jobLocation" required>
+            </p>
+
+            <p>
+                <label>Description:</label>
+                <textarea id="jobDescription" required></textarea>
+            </p>
+
+            <button type="submit">Post Job</button>
+        </form>
+
+        <div id="jobCardsContainer"></div>
     </section>
     <section>
       <h2>Popular Job Categories</h2>
@@ -100,5 +133,6 @@
         All rights reserved
     </p>
 </footer>
+<script src = "script.js"></script>
   </body>
 </html>
