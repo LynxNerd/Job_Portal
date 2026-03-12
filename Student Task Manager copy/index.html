@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Task Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Task Manager</h2>
+
+<input type="text" id="taskInput" placeholder="Enter task">
+
+<select id="priority">
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+</select>
+
+<button onclick="addTask()">Add Task</button>
+
+<br><br>
+
+<button onclick="showAll()">Show All</button>
+<button onclick="showCompleted()">Completed</button>
+<button onclick="showPending()">Pending</button>
+
+
+<ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
